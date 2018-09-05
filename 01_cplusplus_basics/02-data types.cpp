@@ -68,7 +68,7 @@ int main() {
         unsigned short int	Range	        0 to 65,535
         signed short int	Range	        -32768 to 32767
         long int	        4bytes	        -2,147,483,648 to 2,147,483,647
-        signed long int	        4bytes	        same as long int
+        signed long int	  4bytes	        same as long int
         unsigned long int	4bytes	        0 to 4,294,967,295
         
         float	                4bytes	        +/- 3.4e +/- 38 (~7 digits)
