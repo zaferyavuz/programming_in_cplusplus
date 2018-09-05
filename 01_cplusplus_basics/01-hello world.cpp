@@ -5,6 +5,15 @@ using namespace std;        // std namespace kullanılıyor.
 int main() {
    cout << "Hello World";   // ekrana "Hello World" yazar
    return 0;                // program sonlandırılır
+
+   // tek satırlı yorum, // işaretinden sonra yazılan o satırdaki her şey yorum olur
+
+   /* Başka bir tek satırlı yorum */
+
+    /* blok halinde yorum
+        * çok satırlı yorum için bir satır
+    */
+
 }
 
 /*
@@ -55,4 +64,10 @@ int main() {
     - Tüm bunlar white space olarak adlandırılır ve tek bir boşluk karakteri olarak görülür
     - Bu durumda programınızı tek bir satırda da yazabilirsiniz, yüzlerce satıra da bölebilirsiniz.
 
+    ********** YORUM[LAR]   *************************
+    - programcıya daha sonra hatırlatması için kullanılan yapılardır.
+    - c++ dili tarafından görmezden gelinirler
+    - tek satır ve çok satırlı türleri vardır
+    - yazılan bir kodu silmeden görmezden gelinmesi için kullanılabilir.
+    - DEBUG işlemlerinde çok yararlı bir yapıdır.
 */
