@@ -38,6 +38,14 @@ int main() {
    color c = red;     
    cout<<"Renk Değeri : " << c << "(" << int(c) << ")" << endl;
 */
+
+/* 
+   // enum örnek 2
+   enum gun {Pazartesi=1,Sali,Carsamba,Persembe,Cuma,Cumartesi,Pazar};
+   gun g = Sali;
+   cout<<g+1;
+*/
+
    return 0;
 }
 /*
@@ -68,12 +76,19 @@ int main() {
         unsigned short int	Range	        0 to 65,535
         signed short int	Range	        -32768 to 32767
         long int	        4bytes	        -2,147,483,648 to 2,147,483,647
-        signed long int	  4bytes	        same as long int
+        signed long int	        4bytes	        same as long int
         unsigned long int	4bytes	        0 to 4,294,967,295
         
         float	                4bytes	        +/- 3.4e +/- 38 (~7 digits)
         double	                8bytes	        +/- 1.7e +/- 308 (~15 digits)
-        long double	        8bytes	        +/- 1.7e +/- 308 (~15 digits)
+        long double	        8bytes	        +/- 1.7e +/- 308 (~15 digits) (bazı derleyicilerde 16)
+
+        *********************************************************************
+        typedef Tanımlama
+                - c++ da typedef kullanarak var olan t,iplerden yeni bir tip tanımlanabilir
+                - örneğin;
+                        typedef float hacim;
+                        hacim hacim1;           // hacim anahtar kelimesi artık float olarak değerlendirilecek
 
         *********************************************************************
         enum
