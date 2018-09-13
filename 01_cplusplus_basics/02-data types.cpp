@@ -21,7 +21,17 @@ int main() {
    cout << "short int bellek boyutu : " << sizeof(short int) << endl;
    cout << "long int bellek boyutu : " << sizeof(long int) << endl;
 */
+   
+/*
+   short int i;           // signed, unsigned farkı
+   short unsigned int j;  
 
+   j = 50000;
+
+   i = j;  // i=65536-50000
+   cout << i << " " << j;
+*/   
+   
 /*
    float x=2.5;         // double x=-1.0;
    cout << "Reel Sayı İçeriği    : " << x << endl;
