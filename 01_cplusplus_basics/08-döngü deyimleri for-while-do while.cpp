@@ -53,12 +53,12 @@ int main() {
         . tekrarlanacak olan ifadeler buraya yazılır
   */
   //---------------------------------------------------
-
+// /*
   int i;
   for(i=0;i<10;i++){
     cout<<i<<endl;
   }
-
+// */
 //----------------------------------------------------
 /*
   int i,n,t;
@@ -148,5 +148,72 @@ int main() {
   // iç içe döngülere örn; n den küçük asal sayıların bulunması
 */
 //---------------------------------------------------------
+//  break;
+/*
+    break; deyimi 2 amaçla kullanılır
+      1. bir döngü içerisinden çıkmak için (döngüyü kırmak için)
+        .program break deyimini gördüğünde döngüden çıkar ve hemen sonra gelen kodları çalıştırmaya başlar
+        . iç içe döngülerde break deyimi içinde bulunduğu en iç döngüyü kırar
+      2. switch-case ifadelerinde içinde bulunduğu case durumunu sonlandırır.
+*/
+/*
+  int i;
+  for(i=0;i<10;i++){
+    if(i==6) break;
+    cout<<i<<endl;
+    //if(i==6) break;
+  }
+*/
+//--------------------------------------------------------
+//  continue
+/*
+    döngü gözdesinin geri kalanı çalıştırılmadan bir sonraki döngü adımına geçilir, döngü şartı kontrol edilir
+      . for döngüsü için: continue deyiminden sonraki kodlar atlanarak arttırma kısmı çalıştırıldıktan sonra şart kontrol edilir, doğruysa döngüye devam edilir
+      . while, do-while için: continue deyiminden sonraki kodlar atlanarak direk şart kontrol edilir, doğruysa döngüye devam edilir
+*/
+/*
+  int i;
+  for(i=0;i<10;i++){
+    if(i==6) continue;  // i=6 olunca döngü gözdesinin geri kalanı çalıştırılmadan bir sonraki döngü adımına geçilir
+    cout<<i<<endl;
+    //if(i==6) continue;
+  }
+*/
+/*
+  int i=0;
+  while(i<10){
+    if(i==6) continue;  // i=6 olunca döngü gözdesinin geri kalanı çalıştırılmadan bir sonraki döngü adımına geçilir <sonsuz döngü olur, aşağıdaki kodu inceleyin>
+    
+    // for döngüsü gibi bir etki olması için
+    // if(i==6){ i++;  continue;   }
+   
+    cout<<i<<endl;
+    //if(i==6) continue;
+    i++;
+  }
+*/
+//--------------------------------------------------------
+//  goto
+/*
+    . herhangi bir koşul olmadan doğrudan belirlenen etikete atlanarak
+    . yapısal programın akışını bozabilir, program okunurluğunu azaltır, hataları düzletirken programcı zorluk çekebilir. kullanımı tavsiye edilmez
+    . ancak bazı durumlarda kullanımı kolaylık sağlayabilir
+
+for(...) {
+   for(...) {
+      while(...) {
+         if(...) goto sondurak;
+         .
+         .
+         .
+      }
+   }
+}
+sondurak:
+cout << "Programda bir hata oluştu.\n";
+
+*/
+
+//--------------------------------------------------------
   return 0;
 }
