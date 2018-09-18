@@ -53,12 +53,12 @@ int main() {
         . tekrarlanacak olan ifadeler buraya yazılır
   */
   //---------------------------------------------------
-/*
+
   int i;
   for(i=0;i<10;i++){
     cout<<i<<endl;
   }
-*/
+
 //----------------------------------------------------
 /*
   int i,n,t;
@@ -93,6 +93,7 @@ int main() {
   }
 */
 //-------------------------------------------------
+/*
   int i=0,n,t;
   cout<<"N:";
   cin>>n;
@@ -104,6 +105,7 @@ int main() {
     cout<<"Toplam: "<<top<<endl;
     i++;
   }
+*/
 //---------------------------------------------------
 /*
   diğer döngülerden farklı olarak do-while döngüsünde döngü gövdesi olan "ifade4" ilk başta şartsız 1 kere çalışır, daha sonra şart kontrol edilir.
@@ -116,6 +118,35 @@ int main() {
 
 */
 //-----------------------------------------------------
+/*
+  int i=0,n,t,top=0;
+  cout<<"N:";
+  cin>>n;
+  do {
+    cout<<"["<<i+1<<"]:";
+    cin>>t;
+    top+=t;
+    cout<<"Toplam: "<<top<<endl;
+    i++;
+  }while(i<n);
+*/
+//------------------------------------------------------
+/*
+  // iç içe döngüler = 1...n arası sayılar toplamı
+  int top,n;
+  cout<<"N:";
+  cin>>n;
+  for(int i=1;i<=n;i++){
+    top=0;
+    for(int j=1;j<=i;j++){
+      top+=j;
+    }
+    cout<<"Toplam [1..."<<i<<"]: "<<top<<endl;
+  }
 
+  // aynı program kodu diğer döngülerle de yazılabilir
+  // iç içe döngülere örn; n den küçük asal sayıların bulunması
+*/
+//---------------------------------------------------------
   return 0;
 }
