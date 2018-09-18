@@ -3,7 +3,7 @@ using namespace std;        // std namespace kullanılıyor.
 
 // main() fonksiyonu programın başladığı yerdir
 int main() {
-   cout << "Hello World";   // ekrana "Hello World" yazar
+   cout << "Merhaba Dünya";   // ekrana "Merhaba Dünya" yazar
    return 0;                // program sonlandırılır
 
    // tek satırlı yorum, // işaretinden sonra yazılan o satırdaki her şey yorum olur
