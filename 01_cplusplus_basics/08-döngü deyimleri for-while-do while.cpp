@@ -215,5 +215,18 @@ cout << "Programda bir hata oluştu.\n";
 */
 
 //--------------------------------------------------------
+// sonsuz döngü
+/*
+    döngü şartının her zaman doğru olduğu durumda sonsuz döngü oluşur
+
+    while(1){
+      ...
+    }
+
+    for( ; ; ){
+      ...
+    }
+*/
+//-------------------------------------------------------
   return 0;
 }
