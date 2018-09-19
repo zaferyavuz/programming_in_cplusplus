@@ -53,25 +53,102 @@ using namespace std;
           a=topla(5,6);         // fonksiyon çağırma
           ...
         }
+
+      . FONKSİYON PARAMETRELERİ
+          - fonksiyon isiminden sonra virgül ile ayrılarak () içerisinde tanımlanırlar
+          - bu şekilde tanımlanan parametreler "formal değişken" olarak adlandırılırlar
+          - fonksiyon içerisinde lokal değişken gibi davranırlar
+          - fonksiyon çalışması bitince ömürleri sona erer.
+          - değerleri fonksiyon çağrılırken belirlenir
+        
+      . 3 türlü paramtre geçme (fonksiyon çağırma) yöntemi vardır
+          1. call by Value
+          2. call by Pointer
+          3. call by reference
 */
 
-// fonksiyon tanımı, 
+// fonksiyon tanımı, CALL BY VALUE
 int topla(int a,int b){
   return a+b;
 }
+
+// call by value örnek fonk.2
+void takas_cbv(int a,int b){    
+  int temp;
+  temp=a;
+  a=b;
+  b=temp;
+}
+
+void takas_cbp(int *a,int *b){
+  int temp;
+  temp = *a;
+  *a = *b;
+  *b = temp;
+}
 //-----------------------------------------------------------
-
+void takas_cbr(int &a,int &b){
+  int temp;
+  temp = a;
+  a = b;
+  b = temp;
+}
+//-------------------------------------------------------------
+// default değerli parametre
+int topla2(int a,int b=25,int c=5){   
+  return a+b;
+}
+//-------------------------------------------------------------
 int main() {
-// /*
-    cout<<topla(10,12);
-// */
-//-------------------------------------------------------
-// Call by Value
+ /*  call by value
+ //   fonksiyon çağrılırken parametreler formal değişkenlere kopyalanırlar
+ //   yapısal programlama dillerinde fonksiyon çağırma yöntemleri genellikle böyledir
+ //   fonksiyon içerisinde değişkenlere yapılan değişiklikler orjinallerini etkilemez (soru:neden?)
 
-//--------------------------------------------------------
-// Call by Reference
+    //cout<<topla(10,12);
 
+    int a=5,b=6;
+    cout<<"Takastan Önce (a,b)=("<<a<<","<<b<<")"<<endl;
+    takas_cbv(a,b);
+    cout<<"Takastan Sonra (a,b)=("<<a<<","<<b<<")"<<endl;
+    // fonksiyon çağrıldığında değerler nasıl geçiyor? şekil ile anlatalım
+ */
 //--------------------------------------------------------
 // Call by Pointer
+//    fonksiyon çağrılırken parametrelerin adresleri gönderilir
+//    dolayısıyla değişken içerikleri direk etkilenir
+//    şekil ile anlatımda bunun nasıl olduğunu görelim ....
+/*
+    int a=5,b=6;
+    cout<<"Takastan Önce (a,b)=("<<a<<","<<b<<")"<<endl;
+    takas_cbp(&a,&b);     // adresleri parametre olarak gönderiyoruz
+    cout<<"Takastan Sonra (a,b)=("<<a<<","<<b<<")"<<endl;
+    // fonksiyon çağrıldığında değerler nasıl geçiyor? şekil ile anlatalım
+*/
+//--------------------------------------------------------
+// Call by Reference
+//    fonksiyon çağrılırken call by value gibi çağrılırken
+//    ancak fonksiyona değişkenlerin referansları kopyalanırlar
+//    dolayısıyla içerikler etkilenir, çünkü değerler kopyalanmıyor, adres kopyalanıyor
+/*
+    int a=5,b=6;
+    cout<<"Takastan Önce (a,b)=("<<a<<","<<b<<")"<<endl;
+    takas_cbr(a,b);     // doğrudan fonksiyonu call by value gibi çağırıyoruz.
+    cout<<"Takastan Sonra (a,b)=("<<a<<","<<b<<")"<<endl;
+    // fonksiyon çağrıldığında değerler nasıl geçiyor? şekil ile anlatalım
+*/
+//----------------------------------------------------------
+// Default değerli parametre
+//    parametrelerden sonuncusuna (birden fazla olabilir) default değer verilebilir
+//    eğer fonksiyonun tüm parametreleri verilmişse o değerler çağırma yöntemine göre işlem görür
+//    eğer son parametre çağrılırken boş geçilirse default değer geçerli olur
+//    ilk değer için default değer verilmez,
+
+    int a=5,b=6;
+    cout<<"Sonuç 1 = "<<topla2(a,b,10)<<endl;
+    // 2. parametre verilmiyor, default değer alınıyor 
+    cout<<"Sonuç 2 = "<<topla2(a)<<endl;
+
+//---------------------------------------------------------------
   return 0;
 }
