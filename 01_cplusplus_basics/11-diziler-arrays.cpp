@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <ctime>
 using namespace std;
 /*  DİZİLER - ARRAYS
 		. Aynı veri tipinden birden çok veri içeren yapılardır
@@ -54,11 +55,26 @@ double OrtalamaBul3(int *dizi, int boyut) {
    return ort;
 }
 //-------------------------------------------------------------
+// FONKSİYONLARIN DİZİ GERİ DÖNDÜRMESİ için kullanılacak fonk.
+// rasgele sayılar üretilecek ve dizi olarak geri döndürülecek
+int * SayiUret(int n) {
+   //static int  r[10];   // adresi geri döndürülecek dizi static olarak tanımlanmalıdır
+   static int *r = new int[n];
+   // tohum setle
+   srand( (unsigned)time( NULL ) );
+   
+   for (int i = 0; i < n; ++i) {
+      r[i] = rand();
+      //cout << r[i] << endl;
+   }
+   return r;
+}
+//-------------------------------------------------------------
 int main() {
 
 //----------------------------------------------------------
 //	Dizi elemanlarına erişim
-/*
+
 	int n,SUTUN1=6,SUTUN2=7;
   cout<<"N:";
 	cin>>n;
@@ -76,7 +92,7 @@ int main() {
   // Ortalamadan küçük elemanları, ortalamadan büyük elemanları bulunuz
   // 2. max, ve 2. min elemanı bulunuz
   // dizinin matematikteki formülüne göre standar sapmasını bulunuz
-*/
+
 //---------------------------------------------------------------
 //  Çok Boyutlu Dizi
 /*
@@ -151,6 +167,7 @@ int main() {
           ...
         }
 */
+/*
    int a[5] = {1000, 2, 3, 17, 50};
    double o;
 
@@ -161,6 +178,25 @@ int main() {
  
    // output the returned value 
    cout << "Ortalama: " << o << endl;
+*/
+//--------------------------------------------------------------
+/*
+  FONKSİYONLARIN DİZİ GERİ DÖNDÜRMESİ
+	. normal şartlarda bir fonksiyonun sadece 1 adet geri dönüş değeri olur.
+	. ancak dizi şeklinde birden çok değer geri döndürülebilir
+	. bunun için geri dönüş değeri pointer olacak şekilde fonksiyon tanımlanmalıdır
+		int * f(...){
+			...
+		}
+*/
+/*
+   int *p,n=20;
+   p = SayiUret(n);
+   
+   for ( int i = 0; i < n; i++ ) {
+      cout << "*(p + " << i << ") : "<< *(p + i) << endl;
+   }
+*/
 
 //--------------------------------------------------------------
   return 0;
