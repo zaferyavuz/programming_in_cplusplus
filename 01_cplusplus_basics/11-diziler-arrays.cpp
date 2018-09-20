@@ -23,6 +23,37 @@ using namespace std;
       
 */
 //-------------------------------------------------------------
+// fonksiyonlara parametre olarak dizilerin verilmesi için kullanılacak fonk. lar
+double OrtalamaBul(int dizi[], int boyut) {
+  int i, top = 0;       
+  double ort;         
+  for (i = 0; i < boyut; i++) {
+      top += dizi[i];
+   }
+   ort = double(top) / boyut;
+   return ort;
+}
+
+double OrtalamaBul2(int dizi[5], int boyut) {
+  int i, top = 0;       
+  double ort;         
+  for (i = 0; i < boyut; i++) {
+      top += dizi[i];
+   }
+   ort = double(top) / boyut;
+   return ort;
+}
+
+double OrtalamaBul3(int *dizi, int boyut) {
+  int i, top = 0;       
+  double ort;         
+  for (i = 0; i < boyut; i++) {
+      top += *(dizi+i);
+   }
+   ort = double(top) / boyut;
+   return ort;
+}
+//-------------------------------------------------------------
 int main() {
 
 //----------------------------------------------------------
@@ -56,6 +87,7 @@ int main() {
       int tensor[10][20][30];
       unsigned char rgb[3][512][512];   // 512x512 boyutlu renkli bir resim için kullanılabilir
 */
+/*
   int a[3][4] = {       // matrislere İLK DEĞER atama
    {0, 1, 2, 3} ,   //  satir 1 (index 0) 
    {4, 5, 6, 7} ,   //  satir 2 (index 1) 
@@ -76,13 +108,59 @@ int main() {
     }
     cout<<endl;
   }
+  */
   // matris çarpımı kodlayın (boyutlar uygun olmalı, kontrol edin)
   // transpozu kodlayın (kare matris için)
   // çıkarma kodlayın
   // matisin izini (trace) bulun (köşegen üzerindeki elemanların toplamı) (kare matris için)
   // matrisin alt ve üst üçgen bölgelerini ekrana yazın (kare matris için)
 //---------------------------------------------------------------
+/*
+	Dizi ve Pointer ilişkisi
+		. dizi ismi	ilk elemanı gösteren bir pointer dir
+		. int a[10]; tanımı yapıldığında "&a[0] = a" olur
+*/
+/*	
+  int SUTUN1=6,SUTUN2=7;
+	double r[]={3.0,2.5,10.0,-2.3,9.8};	// 5 elemanlı dizi
+	double *p;
+	p = r;		// pointer diziyi gösteriyor
+		
+	cout<<setw(SUTUN1)<<"Sıra"<<setw(SUTUN2)<<"Deger"<<endl;
+	for(int i=0;i<5;i++){
+		cout<<setw(SUTUN1)<<i<<setw(SUTUN2)<<*(p+i)<<endl;
+	}
+ */ 
+//--------------------------------------------------------------
+/*
+    FONKSİYONLARA DİZİLERİN PARAMETRE OLARAK GÖNDERİLMESİ
+      . 3 farklı gönderim şekli mevcut
 
+      1. pointer olarak: burada fonksiyonda formal parametre olarak pointer tanımlanır
+        void f(int *p) {
+          ...
+        }
+
+      2. boyutu belli dizi şeklinde:
+        void f(int dizi[10]) {
+          ...
+        }  
+
+      3. boyutu belirsiz dizi şeklinde (pointer gibi)
+        void f(int dizi[]) {
+          ...
+        }
+*/
+   int a[5] = {1000, 2, 3, 17, 50};
+   double o;
+
+   // dizinin fonksiyona parametre olarak verilmesi
+   //o = OrtalamaBul( a, 5 ) ;
+   //o = OrtalamaBul2( a, 5 ) ;
+   o = OrtalamaBul3( a, 5 ) ;
+ 
+   // output the returned value 
+   cout << "Ortalama: " << o << endl;
 
 //--------------------------------------------------------------
   return 0;
