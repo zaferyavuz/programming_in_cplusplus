@@ -20,6 +20,12 @@ int main() {
    Box Box1;        // Declare Box1 of type Box
    Box Box2;        // Declare Box2 of type Box
    double volume = 0.0;     // Store the volume of a box here
+/*
+    . Box bir veri türü yani tip tir.
+    . Box1 ise bir nesnedir ve genelde gerçek hayatta bir nesneye karşılık gelir
+    . (doğal olarak nesnenin özellikleri (üye değişkenleri) ve bu özellikler üzerinde işlem yapan fonksiyonlar (üye fonksiyonlar=davranışlar) bulunmaktadır)
+*/
+
  
    // box 1 specification
    Box1.height = 5.0; 
