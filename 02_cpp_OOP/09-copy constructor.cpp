@@ -10,7 +10,7 @@ using namespace std;
 
 
       DİKKAT:
-        Bu dosyada getter(), setter() ve inline fonksiyon kullanımı mevcuttur.  
+        Bu dosyada getter(), setter() fonksiyon kullanımı mevcuttur.  
 */
 //-------------------------------------------------------------
 class Point 
