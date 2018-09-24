@@ -6,7 +6,11 @@ using namespace std;
         1) shallow copy: sadece adresler kopyalanır, 
         2) deep copy: buradaiçerik değişkenler de kopyalanır. böylece adreste 2 farklı nesne olmuş olur.
 
-      . Kopyalama işleminin nasıl tanımlanacağı kullanıcı tarafından tanımlanırken kullanılır.  
+      . Kopyalama işleminin nasıl tanımlanacağı kullanıcı tarafından tanımlanırken kullanılır.
+
+
+      DİKKAT:
+        Bu dosyada getter(), setter() ve inline fonksiyon kullanımı mevcuttur.  
 */
 //-------------------------------------------------------------
 class Point 
@@ -25,12 +29,18 @@ class Point
         y = p2.y; 
       } 
     
+    /*
+        bu şekilde her bir private üye için getter() ve setter() fonksiyonlar yazılabilir.
+    */
       int getX(){  
         return x; 
       } 
       int getY(){  
         return y; 
       } 
+     /*
+          fonksiyonlar dışarıda tanımlanmak yerine "inline" olarak class içerisinde tanımlanabilir.
+     */ 
 }; 
 
 int main() {
