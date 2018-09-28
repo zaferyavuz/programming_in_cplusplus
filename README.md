@@ -8,6 +8,7 @@ https://bit.ly/2QVIIny
 
 
 ## Tavsiye Edilen Siteler
+Bu sitelerden bir ve/veya birkaçından seviye atlamak (c++ dili için) serbest ödev için verilecek eşik ödevinden muafiyet getirebilir. Bu yüzden boş kaldıkça bu araçları kullanarak alıştırma yapın, seviyeleri tamamlamaya çalışın.
 * https://codesignal.com/ : Algoritma + Programlama
 * https://www.hackerrank.com/
 * https://projecteuler.net/
