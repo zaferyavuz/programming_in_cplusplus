@@ -1,13 +1,16 @@
-#include <iostream>        
+#include <iostream>  
+#define ARA_SINAV_K 0.45
+#define DONEM_SONU_K 0.55
 using namespace std;    
 
 int main() {
-   int araSinav,donemSonu;
+   int araSinav,donemSonu,ort;
    cout<<"Arasınav: ";
    cin>>araSinav;
    cout<<"Dönem Sonu: ";
    cin>>donemSonu;
-   int ort = (araSinav + donemSonu)/2;
+   ort = (araSinav + donemSonu)/2;
+   ort = ARA_SINAV_K*araSinav + DONEM_SONU_K*donemSonu;
    cout<<ort<<endl;
 /*
 - değişken türleri float, int, char olabilsin, sınırları zorlayalım (unsigned, long).
