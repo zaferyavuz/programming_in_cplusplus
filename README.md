@@ -5,3 +5,9 @@ Slayt01
 https://bit.ly/2QVIIny
 
 01_cplusplus_basics - temel c++ konuları tekrar edilmektedir.
+
+
+Tavsiye Edilen Siteler
+* https://codesignal.com/ : Algoritma + Programlama
+* https://www.hackerrank.com/
+* https://projecteuler.net/
