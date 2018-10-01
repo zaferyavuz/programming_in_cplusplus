@@ -1,6 +1,4 @@
 #include <iostream>
-#define ARASINAV_K 0.4
-#define FINAL_K    0.6
 using namespace std;
 
 int main() {
