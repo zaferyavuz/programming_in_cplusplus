@@ -1,0 +1,19 @@
+#include <iostream>
+#define ARASINAV_K 0.4
+#define FINAL_K    0.6
+using namespace std;
+
+int main() {
+  cin>>n;
+  for(int i=0;i<n;i++){
+    for(int j=0;j<=n;j++){
+      cout<<"*";
+    }
+    cout<<endl;
+  }
+/*
+    - farklı türde üçgenleri ekrana basın
+    - kodda tek bir cout<<"*" komutu kullanarak yapmaya çalışın,
+*/
+  return 0;
+}
