@@ -13,6 +13,8 @@ int main() {
   }
 /*
     - farklı türde üçgenleri ekrana basın
+      kare, baklava dilimi, içi boş baklava dilimi, içi boş kare,
+      üçgen (eşkenar, ikiz, dik)
     - kodda tek bir cout<<"*" komutu kullanarak yapmaya çalışın,
 */
   return 0;
