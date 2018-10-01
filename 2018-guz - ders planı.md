@@ -22,3 +22,4 @@
   * iç içe karar ifadeleri
   * Tekrarlı İfadeler (for, while, do-while)
   * Örnekler: 10 adet not için max, min, ortalama, 2. max, 2. min, standar sapma bulma
+  * Ödevler: ekrana yıldızlarla farklı şekiller çizin, girilen sayının asal çarpanlarını bulun, 1000 den küçük fibonacci sayılarını bulun, girilen sayı çift ise iki asal sayı toıplamı şeklinde ifade edin, değilse asal çarpanlarına ayırın, asal ise bir şey yapmayın
