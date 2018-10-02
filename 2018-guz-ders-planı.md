@@ -27,4 +27,4 @@
   
 * Ders 2
   * Basit girdi çıktı işlemleri: cin, cout, setw, setprecision, fixed
-  * fonksiyonlar, fonksiyon çağırma yöntemleri (call by value, call by pointer, call by reference), fonksiyondan değer geri döndürme (1 veya daha fazla)
+  * fonksiyonlar, fonksiyon çağırma yöntemleri (call by value, call by pointer, call by reference), fonksiyondan değer geri döndürme
