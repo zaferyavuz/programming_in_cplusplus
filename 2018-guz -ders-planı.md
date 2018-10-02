@@ -22,4 +22,9 @@
   * iç içe karar ifadeleri
   * Tekrarlı İfadeler (for, while, do-while)
   * Örnekler: 10 adet not için max, min, ortalama, 2. max, 2. min, standar sapma bulma
-  * Ödevler: ekrana yıldızlarla farklı şekiller çizin, girilen sayının asal çarpanlarını bulun, 1000 den küçük fibonacci sayılarını bulun, girilen sayı çift ise iki asal sayı toıplamı şeklinde ifade edin, değilse asal çarpanlarına ayırın, asal ise bir şey yapmayın
+  * Ödevler: 
+    1)ekrana yıldızlarla farklı şekiller çizin, 2)girilen sayının asal çarpanlarını bulun, 3)1000 den küçük fibonacci sayılarını bulun, 4)girilen sayı çift ise iki asal sayı toplamı şeklinde ifade edin, değilse asal çarpanlarına ayırın, asal ise bir şey yapmayın
+  
+* Ders 2
+  * Basit girdi çıktı işlemleri: cin, cout, setw, setprecision, fixed
+  * fonksiyonlar, fonksiyon çağırma yöntemleri (call by value, call by pointer, call by reference), fonksiyondan değer geri döndürme (1 veya daha fazla)
