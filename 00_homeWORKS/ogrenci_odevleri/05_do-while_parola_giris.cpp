@@ -1,4 +1,4 @@
-//Kullanıcıdan parola ve şifre isteyen, şifre doğru girilmediği takdirde parolayı tekrar isteyen program
+//KullanÃ½cÃ½dan parola ve Ã¾ifre isteyen, Ã¾ifre doÃ°ru girilmediÃ°i takdirde parolayÃ½ tekrar isteyen program
 
 #include<iostream>
 using namespace std;
