@@ -1,4 +1,4 @@
-//Project Euler 1. Soru (Multiples of 3 and 5)
+//Project Euler 1. Soru (Multiples of 3 veya 5)
 #include<iostream> 
 
 using namespace std;
