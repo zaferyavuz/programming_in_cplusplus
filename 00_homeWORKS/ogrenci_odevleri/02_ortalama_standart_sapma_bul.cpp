@@ -1,4 +1,4 @@
-//Girilen sayıların ortalamasını ve standart sapmasını diziler yardımıyla bulan program
+//Girilen sayÄ±larÄ±n ortalamasÄ±nÄ± ve standart sapmasÄ±nÄ± diziler yardÄ±mÄ±yla bulan program
 #include<iostream>
 #include<math.h>
 using namespace std;
