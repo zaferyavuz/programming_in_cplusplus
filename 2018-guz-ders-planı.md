@@ -28,3 +28,10 @@
 * Ders 2
   * Basit girdi çıktı işlemleri: cin, cout, setw, setprecision, fixed
   * fonksiyonlar, fonksiyon çağırma yöntemleri (call by value, call by pointer, call by reference), fonksiyondan değer geri döndürme
+  
+## Hafta 03
+* Ders 1
+  * diziler: tek boyutlu (vector), iki boyutlu (matris), 3 ve daha fazla boyutlu (tensor)
+  * örnek: notları dizide sakla, ort, min, max, std sapma bul, sırala
+  * string (karakter dizisi): 1) karakter dizisi şeklinde (char str[100]) 2) string tipi şeklinde
+  * örnek uygulamalar: kelime büyük harf yap, boşluktan böl, virgülden böl, sonuna ekle, başındaki ve sonundaki boşlukları sil, tersten yaz
