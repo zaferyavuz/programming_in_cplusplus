@@ -10,7 +10,7 @@ void takas_cbr(int &a,int &b){
 int main () {
 /*
 	. referance aslında bir değişken için takma isimdir
-	. zaten var olan değişkenlere ayrıca taka isim vermek için kullanılır
+	. zaten var olan değişkenlere ayrıca takma isim vermek için kullanılır
 	. bir reference bir değişken ile başlatımlandığında o değeri temsil için artık hem değişkeni hem de reference ini kullanabiliriz
 	
 	Reference ile Pointer Karşılaştırması
