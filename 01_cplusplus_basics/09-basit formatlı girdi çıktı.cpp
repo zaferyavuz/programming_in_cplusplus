@@ -7,22 +7,20 @@ int main() {
     <iostream>
       bu kütüphanede standart giriş çıkış fonksiyonları tanımlıdır
       cout, cin, cerr, clog
-
     <iomanip>
       bu kütüphanede formatlı giriş çıkış fonksiyonları tanımlıdır
       setw, setprecision
-
     <fstream>
       bu kütüphanede dosya üzerinde işlem yapan fonksiyonlar ve türler tanımlıdır,
       fstream, ifstream, ofstream ...
 */
 //-------------------------------------------------------
-///*
+
   char ad[50];
   cout << "Adınız : ";
   cin >> ad;
   cout << "Merhaba " << ad << endl;
-//*/
+
 //------------------------------------------------------
 // setw(n) formatlı yazdırma fonksiyonu
 // #include <iomanip> eklenmeli
@@ -53,10 +51,16 @@ int main() {
   double a = 30;
   double b = 10000.0;
   double pi = 3.1416;
-  std::cout.precision (5);
-  std::cout <<   std::showpoint << a << '\t' << b << '\t' << pi << '\n';
-  std::cout << std::noshowpoint << a << '\t' << b << '\t' << pi << '\n';
-*/
+  cout.precision (5);
+  cout <<   showpoint << a << '\t' << b << '\t' << pi << '\n';
+  cout << noshowpoint << a << '\t' << b << '\t' << fixed << setprecision(2)<< pi << '\n';
+  
+  //cout << noshowpoint << a << '\t' << b << '\t';
+  //cout<<scientific;
+  //cout.precision(2);
+  //cout<< pi << '\n';
+  */
+
 //--------------------------------------------------------
 /*    
   cin>>a>>b>>c;  // birden çok değişken almak
