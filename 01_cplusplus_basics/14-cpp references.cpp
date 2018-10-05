@@ -27,6 +27,7 @@ int main () {
    
    i = 5;
    cout << "i : " << i << endl;
+   // r= 6;  // i değişkeni değişiyor
    cout << "i reference : " << r  << endl;
  
    d = 11.7;
