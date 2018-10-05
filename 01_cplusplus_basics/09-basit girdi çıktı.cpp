@@ -48,6 +48,15 @@ int main() {
     //cout<<setw(15)<<fixed<<setprecision(10)<<ort<<endl;
   }
 */
+    
+/*
+  double a = 30;
+  double b = 10000.0;
+  double pi = 3.1416;
+  std::cout.precision (5);
+  std::cout <<   std::showpoint << a << '\t' << b << '\t' << pi << '\n';
+  std::cout << std::noshowpoint << a << '\t' << b << '\t' << pi << '\n';
+*/
 //--------------------------------------------------------
 /*    
   cin>>a>>b>>c;  // birden çok değişken almak
