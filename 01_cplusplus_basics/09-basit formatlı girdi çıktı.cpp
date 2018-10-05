@@ -18,7 +18,7 @@ int main() {
 
   char ad[50];
   cout << "Adınız : ";
-  cin >> ad;
+  cin >> ad;   // cin.get(ad); fonksiyonu da aynı işi yapar
   cout << "Merhaba " << ad << endl;
 
 //------------------------------------------------------
@@ -66,5 +66,26 @@ int main() {
   cin>>a>>b>>c;  // birden çok değişken almak
   
 */
+//----------------------------------------------------------
+/*
+ayrıca bakınız (cin, cout nesnelerinin üye fonksiyonları)
+    cin.get(a);  = cin>>a;
+    --------------------------------------
+    cin.ignore(intExp,chExp);   //  intExp sayıda karakter boyunca chExp karakterini görmezden gelir
+    
+    Örnek:
+        int a,b;
+    Suppose the input is:
+        25 67 89 43 72
+        12 78 34
+    Consider the statements:
+        cin>>a;
+        cin.ignore(100,'\n');
+        cin>>b;
+    The first statement cin>>a; stores 25 in a.
+    The second statement, cin.ignore(100,'\n'); discards all of the remaining numbers in the first line.
+    The third statement cin>>b; stores 12 (from the next line) in b.
+    --------------------------------------------------
+*/    
   return 0;
 }
