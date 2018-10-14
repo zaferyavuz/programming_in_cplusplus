@@ -151,25 +151,120 @@ cout<<setprecision(2); // toplam hane sayısını belirtir.
 
 cout<<fixed;           // ondalık kısımda duyarlılık alır
 ****/  
+/*
+  double x=107.123,y=23;
+  cout<<setprecision(3)<<x<<endl;  // 107 yazar
+  cout<<fixed<<setprecision(2)<<x<<endl;  // 107.12 yazar
+  cout<<fixed<<scientific<<setprecision(4)<<x<<endl;  // 1.0712e+02 (1.0712*10^2) yazar
+  cout.unsetf(ios::fixed);    // fixed bayrağını unset yapar
+  cout.unsetf(ios::scientific);
+  cout<<setprecision(3)<<x<<endl;  // 107 yazar
 
-double x=107.123,y=23;
-cout<<setprecision(3)<<x<<endl;  // 107 yazar
-cout<<fixed<<setprecision(2)<<x<<endl;  // 107.12 yazar
-cout<<fixed<<scientific<<setprecision(4)<<x<<endl;  // 1.0712e+02 (1.0712*10^2) yazar
-cout.unsetf(ios::fixed);    // fixed bayrağını unset yapar
-cout.unsetf(ios::scientific);
-cout<<setprecision(3)<<x<<endl;  // 107 yazar
+  //cout<<showpoint;
+  cout<<setprecision(4)<<y<<endl;  // 23.00 yazar
 
-//cout<<showpoint;
-cout<<setprecision(4)<<y<<endl;  // 23.00 yazar
-
-cout.setf(ios::scientific);   // bayrağı setler
-                              // fixed, scientific, showpoint...
-cout<<setprecision(4)<<y<<endl;  // 23.00 yazar
-
+  cout.setf(ios::scientific);   // bayrağı setler
+                                // fixed, scientific, showpoint...
+  cout<<setprecision(4)<<y<<endl;  // 23.00 yazar
+*/
 //------------------------------------------------------------
 
+/** setw(n);    
+    bir sonra gelen ifadeyi n sütunda yazacak şekilde ayarlar, 
+    default olarak sağa dayalıdır, 
+    cout<<left ile sola cout<<right ile sağa ayarlanabilir
+    taşma olursa gerektiği kadar genişletilir
+**/
+/*
+  int x = 19;						//Line 1
+	int a = 345;					//Line 2
+	double y = 76.384;				//Line 3
 
+	cout<<fixed<<showpoint;				//Line 4  
+  cout<<"12345678901234567890"<<endl;		//Line 5
+
+	cout<<setw(5)<<x<<endl;				//Line 6
+	cout<<setw(5)<<a<<setw(5)<<"Hi"
+	    <<setw(5)<<x<<endl<<endl;			//Line 7
+	
+	cout<<setprecision(2);				//Line 8
+	cout<<setw(6)<<a<<setw(6)<<y
+	    <<setw(6)<<x<<endl;				//Line 9
+    	cout<<setw(6)<<x<<setw(6)<<a
+	    <<setw(6)<<y<<endl<<endl;			//Line 10
+
+	cout<<setw(5)<<a<<x<<endl;			//Line 11
+	cout<<setw(2)<<a<<setw(4)<<x<<endl;		//Line 12
+  */
+//----------------------------------------------------
+/*
+  // fill() ve setfill()
+  int x = 15;						//Line 1			
+	int y = 7634;					//Line 2
+
+	cout<<"12345678901234567890"<<endl;		//Line 3
+	cout<<setw(5)<<x<<setw(7)<<y
+	    <<setw(8)<<"Warm"<<endl;			//Line 4
+
+	cout.fill('*');					//Line 5
+	cout<<setw(5)<<x<<setw(7)<<y
+	    <<setw(8)<<"Warm"<<endl;			//Line 6	
+      cout<<setw(5)<<x<<setw(7)<<setfill('#')	
+	    <<y<<setw(8)<<"Warm"<<endl;		//Line 7
+
+	cout<<setw(5)<<setfill('@')<<x
+	    <<setw(7)<<setfill('#')<<y
+	    <<setw(8)<<setfill('^')<<"Warm"
+	    <<endl;						//Line 8
+
+	cout.fill(' ');					//Line 9
+	cout<<setw(5)<<x<<setw(7)<<y
+	    <<setw(8)<<"Warm"<<endl;			//Line 10  
+*/
+//---------------------------------------------------
+/*
+  // left, right manipulator
+  int x = 15;						//Line 1
+	int y = 7634;					//Line 2
+
+	cout<<left;						//Line 3
+	
+	cout<<"12345678901234567890"<<endl;		//Line 4
+	cout<<setw(5)<<x<<setw(7)<<y
+	    <<setw(8)<<"Warm"<<endl;			//Line 5
+
+	cout.fill('*');					//Line 6
+cout<<setw(5)<<x<<setw(7)<<y
+	    <<setw(8)<<"Warm"<<endl;			//Line 7
+
+	cout<<setw(5)<<x<<setw(7)<<setfill('#')<<y
+	    <<setw(8)<<"Warm"<<endl;			//Line 8
+
+
+	cout<<setw(5)<<setfill('@')<<x
+	    <<setw(7)<<setfill('#')<<y
+	    <<setw(8)<<setfill('^')<<"Warm"<<endl; //Line 9
+						
+	cout.unsetf(ios::left);				//Line 10
+	cout.fill(' ');					//Line 11
+
+	cout<<setw(5)<<x<<setw(7)<<y
+	    <<setw(8)<<"Warm"<<endl;			//Line 12
+*/
+//------------------------------------------------------
+/*** flush
+    cout fonksiyonu ekrana bir şey yazarken buffer kullanır,
+    buffer dolmadan genelde ekrana bir şey yazmaz,
+    buffer dolduğunda ya da endl gördüğünde ekrana yazma işlemi gerçekleştirir
+    bazen öyle durumlar olur ki buffer dolmadan bufferda bulunan karakterlerin ekrana yazılması gerekir
+    bu durumda
+    cout<<flush;  kullanılır
+int num;
+cout<<"Enter an integer: " <<flush;		//Line 1
+cin>>num;					//Line 2
+cout<<endl;					//Line 3
+******/
+//-----------------------------------------------------------
 
   return 0;
 }
