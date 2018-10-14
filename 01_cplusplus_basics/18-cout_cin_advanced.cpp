@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -56,7 +57,7 @@ int main() {
   // The third statement cin>>b; stores 12 (from the next line) in b.
 
 //-----------------------------------------------------
-
+/*
   // cin.putback(ch);   1 karakter geri gider okur
   // ch=cin.peek();     sıradaki karakteri okur ancak ilerlemez
   char ch;
@@ -81,8 +82,8 @@ int main() {
   cin.get(ch);					//Line 12
 	cout<<"Line 13: After cin.get(ch); ch = "
 	    <<ch<<endl;					//Line 13
-
-/*
+*/
+/************
 ÇIKTI:
   Line 1: Enter a string: abcd
 
@@ -93,8 +94,82 @@ Line 11: After cin.peek(); ch = c
 Line 13: After cin.get(ch); ch = c
 */
 //------------------------------------------------------------------ 
+/*
+  // input failure
+  int a = 10;					   	//Line 1
+   int b = 20;					   	//Line 2
+   int c = 30;					   	//Line 3
+   int d = 40;					   	//Line 4
+	
+   cout<<"Line 5: Enter four integers: ";   	//Line 5
+   cin>>a>>b>>c>>d;				  	//Line 6
+   cout<<endl;					  	//Line 7
+  cout<<"Line 8: The numbers you entered are:"
+  	 <<endl;				   		//Line 8
+   cout<<"Line 9: a = "<<a<<", b = "<<b		
+	 <<", c = "<<c<<", d = "<<d<<endl;	   	//Line 9
+*/
 
-   
+/********  ÖRNEK GİRİŞ:
+Line 5: Enter four integers: 34 K 67 28
+
+Line 8: The numbers you entered are:
+Line 9: a = 34, b = 20 (0?), c = 30, d = 40
+
+*** hata oluştuğunda sonrakileri direk atlar.
+**********/   
+//-------------------------------------------------------------------
+
+  // getline(cin,str);
+/****
+  string ad;
+  cin>>ad; // whitespace görene kadar alır
+  cout<<"Merhaba "<<ad<<endl;
+***/
+
+/****
+  string ad;
+  getline(cin,ad);  // tüm satırı alır
+  cout<<"Merhaba "<<ad<<endl;
+***/
+/*****
+  char ad[256];
+  //cin.getline(ad,256,'u');
+  cin.getline(ad,5,'\n');
+  cout<<"Merhaba "<<ad<<endl;
+***/
+
+//------------------------------------------------------------------
+
+  // cout
+/******
+cout<<expression or manipulator
+    <<expression or manipulator...;
+expression is evaluated, its value is printed, and manipulator is used to format the output. 
+
+cout<<setprecision(2); // toplam hane sayısını belirtir.
+
+cout<<fixed;           // ondalık kısımda duyarlılık alır
+****/  
+
+double x=107.123,y=23;
+cout<<setprecision(3)<<x<<endl;  // 107 yazar
+cout<<fixed<<setprecision(2)<<x<<endl;  // 107.12 yazar
+cout<<fixed<<scientific<<setprecision(4)<<x<<endl;  // 1.0712e+02 (1.0712*10^2) yazar
+cout.unsetf(ios::fixed);    // fixed bayrağını unset yapar
+cout.unsetf(ios::scientific);
+cout<<setprecision(3)<<x<<endl;  // 107 yazar
+
+//cout<<showpoint;
+cout<<setprecision(4)<<y<<endl;  // 23.00 yazar
+
+cout.setf(ios::scientific);   // bayrağı setler
+                              // fixed, scientific, showpoint...
+cout<<setprecision(4)<<y<<endl;  // 23.00 yazar
+
+//------------------------------------------------------------
+
+
 
   return 0;
 }
