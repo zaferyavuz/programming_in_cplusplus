@@ -1,15 +1,7 @@
 #include <iostream>
 using namespace std;
 /*
-Bir PC ye bağlı yazıcıda çıktı alırken PC den gönderilen belgeler yazıcı kuyruğunda birikmektedir. PC belgeleri bu kuyruğa iter, 
-yazıcı ise işi bittiğinde bu kuyruktan sırasıyla bir belge alır ve yazdırır. 
-Sizden bu sürecin “dairesel kuyruk” veri yapısı ile kodlanması istenmektedir. Aşağıda kısıtlar ve istenenler listelenmektedir.
-Yazıcı kuyruğunda en fazla 20 belge biriktirilebilmektedir ve bu değer program test edilirken değiştirilebilir (kapasite=20). 
-PC herhangi bir zamanda kuyruğa bir belge ekleyebilir. Yazıcı herhangi bir zamanda kuyruktan bir belge alıp yazdırabilir.
-Kuyruk dolu olduğunda PC kuyruğa belge ekleyemez ve hata mesajı alır, Kuyruk boş olduğunda yazıcı bir şey yazmaz.
-Belgeler PC den gönderilme sıralarına göre yazdırılmalıdır.
-Örnek bir main dosyası ayrıca yayınlanacaktır ve main içindeki kodlara bağlı kalınacaktır.
-Ödev savunması sırasında kaynak kod üzerinde öğrenci tarafından istenen değişiklikler yapılabilecektir.
+
 Yazıcıya gönderilen belgelerin özellikleri şu şekilde olmalıdır
 Belge adı/yolu
 boyutu
@@ -40,21 +32,8 @@ int main() {
 /*
 Örnek Dosya İçeriği
 --------------------------------
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
-read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+....
+....
 */
