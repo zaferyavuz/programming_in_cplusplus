@@ -55,6 +55,46 @@ int main () {
 
    // close the opened file.
    infile.close();
+   
+//------------------------------------------------------------
+   
+     
+   /*
+   ifstream infile; 
+   infile.open("a.txt"); 
+ 
+   cout << "Reading from the file" << endl; 
+   while(!infile.eof()){
+   infile >> data; 
+
+   // write the data at the screen.
+   cout << data << endl;
+   
+   // again read the data from the file and display it.
+   infile >> data; 
+   cout << data << endl; 
+   }
+   */
+//------------------------------------------------------------   
 
    return 0;
 }
+
+
+/*
+a.txt
+------------------
+abadi
+abajur
+abak
+abakan
+abala
+abandone
+abanges
+abani
+abanma
+abanmak
+abanoz
+abanozlaţmak
+abar
+*/
