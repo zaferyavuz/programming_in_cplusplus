@@ -1,7 +1,5 @@
-#
-
-
-
+#include <iostream>
+using namespace std;
 /*
 Bir PC ye bağlı yazıcıda çıktı alırken PC den gönderilen belgeler yazıcı kuyruğunda birikmektedir. PC belgeleri bu kuyruğa iter, 
 yazıcı ise işi bittiğinde bu kuyruktan sırasıyla bir belge alır ve yazdırır. 
@@ -30,3 +28,11 @@ oluşturulma tarihi (tarih türünden bir yapı)
   saniye
 
 */
+
+int main() {
+  /*
+    dairesel kuyruk tanımlayın.
+    ...
+  */
+  return 0;
+}
