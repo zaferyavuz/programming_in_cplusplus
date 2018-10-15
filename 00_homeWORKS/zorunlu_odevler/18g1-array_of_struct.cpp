@@ -36,3 +36,25 @@ int main() {
   */
   return 0;
 }
+
+/*
+Örnek Dosya İçeriği
+--------------------------------
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+read files/a.docx 2403345 4 zafer;yavuz;zyavuz;zyavuz@ktu.edu.tr;1985 2018:10:21:14:05:56
+*/
