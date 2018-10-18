@@ -35,3 +35,21 @@
   * örnek: notları dizide sakla, ort, min, max, std sapma bul, sırala
   * string (karakter dizisi): 1) karakter dizisi şeklinde (char str[100]) 2) string tipi şeklinde
   * örnek uygulamalar: kelime büyük harf yap, boşluktan böl, virgülden böl, sonuna ekle, başındaki ve sonundaki boşlukları sil, tersten yaz
+
+* Ders 2
+  * pointer, reference, dizi pointer ilişkisi
+  * struct, yapılara giriş
+  
+## Hafta 04
+* Ders 1
+  * cin, cout advanced
+  * string işlemleri (advanced)
+
+* Ders 2
+  * struct dizileri, struct composition
+  * dosya işlemleri
+  * örnek uygulama
+
+## Hafta 05
+* Ders 1
+  * ?
