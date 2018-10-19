@@ -5,3 +5,11 @@
   son güncelleme tarihi
   opsiyonel extra bilgiler
 ------------------------------------*/
+#include <iostream>
+using namespace std;
+
+int main() {
+  // kodlar buraya
+  // ...
+  return 0;
+}
