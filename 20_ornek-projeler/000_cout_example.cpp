@@ -1,5 +1,6 @@
 /*
 ekrana büyük harfle CENG yazdırma
+kaynak kod hizalı olmalı
 CENG: Computer engineering
 
  _____  _____  _   _  _____ 
