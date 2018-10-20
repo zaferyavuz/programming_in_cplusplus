@@ -5,6 +5,7 @@ using namespace std;
 Yazıcıya gönderilen belgelerin özellikleri şu şekilde olmalıdır
 Belge adı/yolu
 boyutu
+sayfa sayısı
 belgenin sahibi (kisi türünde bir yapı)
   ad
   soyad
@@ -41,7 +42,12 @@ bu şekilde belge sayısı kadar satir olacak.
 sozgelimi dosyada 10 adet belge olsun
 kuyruk kapasitesi 5 olsun.
 pc kuyruga 2 saniyede bir gondersin.
-yazici ise belgeyi 5sn de bir yazsin.
+yazici ise belgeyi 5sn de bir yazsin. 
+(BURADA YAZICI YAZMA KAPASİTESİ SABİT ALINMIŞ, 
+OYSA Kİ ÖDEVDE YAZICININ SAYFA BASMA HIZI ALINACAK, BELGENİN SAYFA SAYISI ALINACAK, 
+YAZICININ BELGEYİ YAZMA HIZI BUNA GÖRE HESAPLANACAK, YANI BU EĞER DİNAMİK OLACAK, 
+ÖRNEĞİN;
+YAZICI 2 SANİYEDE 1 SAYFA YAZDIRSA 4 SAYFALIK BİR BELGEYİ 8 SN DE YAZDDIRACAK)
 
 bu durumda ornek dosya girisi
 a1 
