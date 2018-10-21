@@ -1,6 +1,6 @@
 /*
   Array of Struct + file processing
-    dosyadan while dönüsü ile tüm satırları oku (sıralı erişim, rasgele erişim)
+    dosyadan while dönüsü ile tüm satırları oku (sıralı erişim)
   Zafer Yavuz
   zyavuz610@gmail.com
   18.10.2018
