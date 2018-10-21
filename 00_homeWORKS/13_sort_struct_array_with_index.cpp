@@ -1,6 +1,10 @@
 /*
   Array of Struct + file processing
     dosyadan while dönüsü ile tüm satırları oku (sıralı erişim)
+    sıralama, struct parametre gönderimi vs...
+  derste uygulama:
+    boşluk yerine tab konulsun
+    dosyadan okuma ve dosyadan yazma fonk. larla yapılsın.
   Zafer Yavuz
   zyavuz610@gmail.com
   18.10.2018
