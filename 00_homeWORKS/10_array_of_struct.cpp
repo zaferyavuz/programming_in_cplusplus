@@ -1,8 +1,8 @@
 /*
-  Uygulma amacı
-  Ad Soyad
-  iletişim bilgileri
-  g. tarihi
+  Array of Struct
+  Zafer Yavuz
+  zyavuz610@gmail.com
+  18.10.2018
 ------------------------------------*/
 
 /*
@@ -13,13 +13,30 @@
   finalNot
   ortalama
   harfNot
-dosyadan okuma yapıcaz
-dosya formatı
-15
+dosyadan okuma olacak 
+
+
+/*
+Dosya içeriği örneği
+---------------------------------
+5
 Zafer Yavuz 123 50 60 0 E
-Zafer Yavuz 123 50 60 0 E
-Zafer Yavuz 123 50 60 0 E
-Zafer Yavuz 123 50 60 0 E
+Ferdi Besli 124 45 60 0 E
+Zeynep Yılmaz 125 50 100 0 E
+Merve Yavuz 126 50 60 0 E
+Ali Yağız 127 50 60 0 E
+
+
+Çıktı Dosya
+--------------------------------
+5
+Zafer Yavuz 50 60 55 CB
+Ferdi Besli 45 60 52.5 CC
+Zeynep Yılmaz 50 100 75 BA
+Merve Yavuz 50 60 55 CB
+Ali Yağız 50 60 55 CB
+
+
 */
 
 #include <fstream>
@@ -53,29 +70,6 @@ string HarfNotHesapla(double o){
   else if(o<=100) return "AA";
   else return "E";
 }
-/*
-Dosya içeriği örneği
----------------------------------
-5
-Zafer Yavuz 123 50 60 0 E
-Ferdi Besli 124 45 60 0 E
-Zeynep Yılmaz 125 50 100 0 E
-Merve Yavuz 126 50 60 0 E
-Ali Yağız 127 50 60 0 E
-
-
-Çıktı Dosya
---------------------------------
-5
-Zafer Yavuz 50 60 55 CB
-Ferdi Besli 45 60 52.5 CC
-Zeynep Yılmaz 50 100 75 BA
-Merve Yavuz 50 60 55 CB
-Ali Yağız 50 60 55 CB
-
-
-*/
-
 int main () {
   string dosyaAd = "a.txt";
   ifstream dosya;
