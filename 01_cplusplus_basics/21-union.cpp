@@ -1,5 +1,9 @@
 /*
-The union is only as big as necessary to hold its largest data member. The other data members are allocated in the same bytes as part of that largest member. The details of that allocation are implementation-defined, and it's undefined behavior to read from the member of the union that wasn't most recently written. Many compilers implement, as a non-standard language extension, the ability to read inactive members of a union.
+The union is only as big as necessary to hold its largest data member. 
+The other data members are allocated in the same bytes as part of that largest member. 
+The details of that allocation are implementation-defined, 
+and it's undefined behavior to read from the member of the union that wasn't most recently written. 
+Many compilers implement, as a non-standard language extension, the ability to read inactive members of a union.
 */
 
 #include <iostream>
