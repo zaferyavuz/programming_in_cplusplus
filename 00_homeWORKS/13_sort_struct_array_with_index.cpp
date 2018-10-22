@@ -2,6 +2,7 @@
   Array of Struct + file processing
     dosyadan while dönüsü ile tüm satırları oku (sıralı erişim)
     sıralama, struct parametre gönderimi vs...
+    öğrencileri ekrana yaz
   derste uygulama:
     boşluk yerine tab konulsun
     dosyadan okuma ve dosyadan yazma fonk. larla yapılsın.
@@ -58,10 +59,11 @@ Ali Yağız 127 50 60 56.5 CB
 
 #include <fstream>
 #include <iostream>
+#include <iomanip>
 #include <ctime>
 #define AK 0.35
 #define FK 0.65
-#define N 100
+#define N 1000
 using namespace std;
 
 struct TamAd{
@@ -138,6 +140,16 @@ void structSirala2(Ogrenci *o1,int boy,unsigned int *index){
   }
 }
 
+void ogrenciEkranaYaz(Ogrenci o){
+  cout<<left<<setw(10)<<o.tamAd.ad<<"\t";
+  cout<<setw(12)<<o.tamAd.soyad<<"\t";
+  cout<<right<<setw(5)<<o.numara<<"\t";
+  cout<<setw(4)<<noshowpoint<<o.araSNot<<"\t";
+  cout<<setw(4)<<o.finalNot<<"\t";
+  cout<<setw(6)<<setprecision(4)<<showpoint<<o.ortalama<<"\t";
+  cout<<setw(3)<<o.harfNot<<"\n";
+}
+
 int main () {
   int basla_s=clock();
   
@@ -161,15 +173,16 @@ int main () {
     dosya>>s1[i].harfNot;
     s1[i].ortalama = s1[i].ortalama = OrtalamaHesapla(s1[i].araSNot, s1[i].finalNot);
     s1[i].harfNot = HarfNotHesapla(s1[i].ortalama);
+    ogrenciEkranaYaz(s1[i]);
     i++;
   }
   dosya.close();
   cout<<"dosyadan okuma bitti"<<endl;
+  cout<<"--------------------------------------"<<endl;
+  structSirala(s1,i);
+  //structSirala2(s1,i,index);
 
-  //structSirala(s1,i);
-  structSirala2(s1,i,index);
-
-  cout<<"dosyadan yazma başladı"<<endl;
+  cout<<"dosyaya yazma başladı"<<endl;
   ofstream dosya2;
   dosya2.open(dosyaout.c_str());
   for(int k=0;k<i;k++){
@@ -182,8 +195,9 @@ int main () {
     dosya2<<s1[j].ortalama<<" ";
     dosya2<<s1[j].harfNot;
     if(k!=i-1) dosya2<<endl;
+    ogrenciEkranaYaz(s1[j]);
   }
-  cout<<"dosyadan yazma bitti"<<endl;
+  cout<<"dosyaya yazma bitti"<<endl;
   int bitis_s=clock();
   cout << "toplam süre: " << (bitis_s-basla_s)/double(CLOCKS_PER_SEC)*1000 << endl;
    return 0;
