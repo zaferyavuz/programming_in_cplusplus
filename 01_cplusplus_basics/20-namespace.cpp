@@ -108,3 +108,55 @@ int main () {
    
    return 0;
 }
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+namespace globalType
+{
+	  const int n = 10;
+	  const double rate = 7.50;
+	  int count = 0;
+	  void printResult();
+}
+....
+globalType::rate           şeklinde kullanılabilir.
+
+void globalType::printResult() 
+{
+	.
+	.
+	.
+}
+
+--------------------------------------------------------------------------
+#include <cmath>
+
+int main()
+{
+   double x = 15.3;
+   double y;
+
+   y = std::pow(x,2);
+   .
+   .
+   .
+}
+---------------------------------------------------------------------------
+#include <iostream>
+. 
+.
+.
+int main()
+{
+   std::cout<<.............
+   using namespace std;
+   .
+   .
+   cout<<............
+   .
+}
+std::cout<<......................
+.
+.
+.
+
+*/
