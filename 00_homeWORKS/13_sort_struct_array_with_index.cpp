@@ -171,7 +171,7 @@ int main () {
     dosya>>s1[i].finalNot;
     dosya>>s1[i].ortalama;
     dosya>>s1[i].harfNot;
-    s1[i].ortalama = s1[i].ortalama = OrtalamaHesapla(s1[i].araSNot, s1[i].finalNot);
+    s1[i].ortalama = OrtalamaHesapla(s1[i].araSNot, s1[i].finalNot);
     s1[i].harfNot = HarfNotHesapla(s1[i].ortalama);
     ogrenciEkranaYaz(s1[i]);
     i++;
