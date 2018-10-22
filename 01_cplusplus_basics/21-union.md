@@ -11,4 +11,4 @@ Similarities between Structure and Union
 - ‘.’ operator is used for accessing members.
 
 Differences
-![struct_vs_union](/files)
+![Diff](files/Structure-vs-Union.png)
