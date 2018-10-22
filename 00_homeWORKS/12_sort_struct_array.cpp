@@ -90,11 +90,46 @@ void takasO(Ogrenci *o1,Ogrenci *o2){
   o2->ortalama       = tempO.ortalama;
   o2->harfNot        = tempO.harfNot;
 }
+void takasO2(Ogrenci *o1,Ogrenci *o2){
+Ogrenci temp;
+temp = *o1;
+*o1 = *o2;
+*o2 = temp;
+}
+void takasO3(Ogrenci o1,Ogrenci o2){
+  //....... siz yazın
+  Ogrenci tempO;
+  tempO.tamAd.ad    = o1.tamAd.ad;
+  tempO.tamAd.soyad = o1.tamAd.soyad;
+  tempO.numara      = o1.numara;
+  tempO.araSNot     = o1.araSNot;
+  tempO.finalNot    = o1.finalNot;
+  tempO.ortalama    = o1.ortalama;
+  tempO.harfNot     = o1.harfNot;
+
+  o1.tamAd.ad       = o2.tamAd.ad;
+  o1.tamAd.soyad    = o2.tamAd.soyad;
+  o1.numara         = o2.numara;
+  o1.araSNot        = o2.araSNot;
+  o1.finalNot       = o2.finalNot;
+  o1.ortalama       = o2.ortalama;
+  o1.harfNot        = o2.harfNot;
+
+  o2.tamAd.ad       = tempO.tamAd.ad;
+  o2.tamAd.soyad    = tempO.tamAd.soyad;
+  o2.numara         = tempO.numara;
+  o2.araSNot        = tempO.araSNot;
+  o2.finalNot       = tempO.finalNot;
+  o2.ortalama       = tempO.ortalama;
+  o2.harfNot        = tempO.harfNot;
+}
 void structSirala(Ogrenci *o1,int boy){
   for(int i=0;i<boy;i++){
     for(int j=i;j<boy;j++){
       if(o1[i].ortalama < o1[j].ortalama) {
-        takasO(&o1[i],&o1[j]);
+        //takasO(&o1[i],&o1[j]);
+        //takasO2(&o1[i],&o1[j]);
+        takasO3(o1[i],o1[j]);
       }
     }
   }
@@ -102,7 +137,7 @@ void structSirala(Ogrenci *o1,int boy){
 }
 int main () {
   string dosyain = "a.txt";
-  string dosyaout = "a.txt";
+  string dosyaout = "a1.txt";
 
   cout<<"dosyadan okuma başladı"<<endl;
   ifstream dosya;
@@ -117,7 +152,7 @@ int main () {
     dosya>>s1[i].finalNot;
     dosya>>s1[i].ortalama;
     dosya>>s1[i].harfNot;
-    s1[i].ortalama = s1[i].ortalama = OrtalamaHesapla(s1[i].araSNot, s1[i].finalNot);
+    s1[i].ortalama = OrtalamaHesapla(s1[i].araSNot, s1[i].finalNot);
     s1[i].harfNot = HarfNotHesapla(s1[i].ortalama);
     i++;
   }
