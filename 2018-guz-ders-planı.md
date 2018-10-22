@@ -52,4 +52,16 @@
 
 ## Hafta 05
 * Ders 1
+  * örnek uygulama
+  
+* Ders 2
+  * union
+  * namespaces
+  
+  
+## Hafta 06
+* Ders 1
+  * --------------------------29 Ekim tatili------------------------------
+  
+* Ders 2
   * ?
