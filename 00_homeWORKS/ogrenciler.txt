@@ -1,3 +1,7 @@
+Bu dosyadaki isim ve soyisimler tamamen bilgisayar ile rasgele bir şekilde birleştirilerek oluşturuluştur. Bilgiler anonimdir ve herhangi bir kişi ile ilgili değildir. Bir satırda bulunan alanlar sırasıyla aşağıdaki gibidir.
+----------------------------------------------------------
+AD SOYAD NUMARA ARA-SINAV-NOTU FİNAL-NOTU ORTALAMA HARF-NOTU
+----------------------------------------------------------
 SERHAT KİRAZ	1870	50	46	0	E
 OSMAN TAŞ	2356	36	67	0	E
 MERVE ERKAN	1943	20	64	0	E
