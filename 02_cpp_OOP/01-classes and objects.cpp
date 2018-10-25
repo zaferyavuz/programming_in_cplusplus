@@ -5,6 +5,14 @@ using namespace std;
     class yapıları struct yapıları gibi farklı türdeki verileri bir araya getirir ancak bazı farklar vardır
       1. class yapılarında fonksiyon da kullanılıyor, böylece enkapsülasyon özelliği olmuş olur
       2. struct ta üyeler varsayılan olarak public iken class ta private dır
+      
+A STRUCT VERSUS A CLASS
+By default the members of a struct are public.
+By default the members of a class are private.
+You can use the member access specifier private in a struct to make a member private.
+Both C++ classes and structs have the same capabilities. 
+Most programmers restrict their use of structures to adhere to their C-like structure form, and so do not use them to include member functions. 
+If all of the data members of a class are public and the class has no member functions, you typically use a struct to group these members.      
 
       burada class herhangi bir methoda sahip değil ancak bir geçiş için örnek teşkil edebilir
 
