@@ -55,8 +55,11 @@
   * örnek uygulama
   
 * Ders 2
-  * union
-  * namespaces
+  * union, namespaces
+  * class, struct vs class, 
+  * class üyeleri (değişkenler<özellik>, fonksiyonlar<davranış>), 
+  * :: operatörü, 
+  * getter(), setter() fonksiyonlar
   
   
 ## Hafta 06
@@ -64,4 +67,5 @@
   * --------------------------29 Ekim tatili------------------------------
   
 * Ders 2
-  * ?
+  * public, private, protected
+  * constructor, parametreli constructor, destructor, copy constructor
