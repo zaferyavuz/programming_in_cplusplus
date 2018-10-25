@@ -23,7 +23,7 @@ class Point
         y = y1; 
       } 
     
-      // Copy constructor 
+      // Copy constructor, class ismi ile aynı fonk. ve parametre olarak kendini referans alır. 
       Point(const Point &p2) {
         x = p2.x-1; // kopyalarken değişiklik yapılabilir
         y = p2.y; 
