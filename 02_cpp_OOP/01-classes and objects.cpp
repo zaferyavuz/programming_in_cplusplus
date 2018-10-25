@@ -26,6 +26,12 @@ int main() {
     . (doğal olarak nesnenin özellikleri (üye değişkenleri) ve bu özellikler üzerinde işlem yapan fonksiyonlar (üye fonksiyonlar=davranışlar) bulunmaktadır)
 */
 
+/*
+    . operatörü elemanlara erişim için kullanılır
+    = operatörü direk nesnelerin birbirine atanmasında kullanılır (pointer olmayacak)
+    DENE
+        Box1 = Box2;
+*/
  
    // box 1 specification
    Box1.height = 5.0; 
@@ -47,7 +53,7 @@ int main() {
    return 0;
 }
 //---------------------------------------------------------------------
-/*
+/*  bir başka örnek (öğrenci sınıfı da verilebilir)
 class clockType
 {
 public:
@@ -57,6 +63,10 @@ public:
     void incrementSeconds();
     void incrementMinutes();
     void incrementHours();
+    
+    // burada class parametre olarak gönderiliyor, 
+    // foksiyon çağrısında call by value, call by reference, call by pointer yöntemleri kullanılabilir
+    // class türü geri dönüş değeri olabilir
     bool equalTime(const clockType& otherTime) const;
 
 private:
