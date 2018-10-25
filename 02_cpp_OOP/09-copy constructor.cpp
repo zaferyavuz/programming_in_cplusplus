@@ -25,7 +25,7 @@ class Point
     
       // Copy constructor 
       Point(const Point &p2) {
-        x = p2.x; // kopyalarken değişiklik yapılabilir
+        x = p2.x-1; // kopyalarken değişiklik yapılabilir
         y = p2.y; 
       } 
     
