@@ -69,3 +69,23 @@
 * Ders 2
   * public, private, protected
   * constructor, parametreli constructor, destructor, copy constructor
+
+## Hafta 07
+* Ders 1
+  * örnek uygulama
+  
+* Ders 2
+
+## Hafta 08
+* Ders 1
+  * örnek uygulama
+  
+* Ders 2
+
+## Hafta 09
+* ------------------- ARASINAV HAFTASI ---------------------------
+## Hafta 10
+* Ders 1
+  * örnek uygulama
+  
+* Ders 2
