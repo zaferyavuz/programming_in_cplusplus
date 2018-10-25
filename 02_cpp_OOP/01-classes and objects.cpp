@@ -46,3 +46,23 @@ int main() {
    cout << "Volume of Box2 : " << volume <<endl;
    return 0;
 }
+//---------------------------------------------------------------------
+/*
+class clockType
+{
+public:
+    void setTime(int, int, int);
+    void getTime(int&, int&, int&);
+    void printTime() const;
+    void incrementSeconds();
+    void incrementMinutes();
+    void incrementHours();
+    bool equalTime(const clockType& otherTime) const;
+
+private:
+    int hr;
+    int min;
+    int sec;
+};
+
+*/
