@@ -46,7 +46,7 @@ class Point
 int main() {
   
     Point p1(10, 15); // Normal constructor
-    Point p2 = p1; // Copy constructor çağrılıyor
+    Point p2 = p1; // Copy constructor çağrılıyor, normalde hiç copy const. fonksiyonu implement edilmede olurdu ancak birebir eşitlemenin dışında bir iş yapılacaksa ayrıca implement edilmesi gerekir
   
      
     cout << "p1.x = " << p1.getX() << ", p1.y = " << p1.getY()<<endl; 
