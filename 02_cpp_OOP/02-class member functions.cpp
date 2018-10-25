@@ -20,7 +20,8 @@ class Box {
 
 */
 
-// Member functions definitions
+// Member functions definitions (implementation)
+// :: operatörü kullanılıyor (namespace kullanımına benzer)
 double Box::getVolume(void) {
    return length * breadth * height;
 }
@@ -60,3 +61,26 @@ int main() {
    cout << "Volume of Box2 : " << volume <<endl;
    return 0;
 }
+
+
+/*
+// Bu class ı implemente edelim,
+class clockType
+{
+public:
+    void setTime(int, int, int);
+    void getTime(int&, int&, int&);
+    void printTime() const;
+    void incrementSeconds();
+    void incrementMinutes();
+    void incrementHours();
+    bool equalTime(const clockType&) const;
+
+private:
+    int hr;
+    int min;
+    int sec;
+};
+
+
+*/
