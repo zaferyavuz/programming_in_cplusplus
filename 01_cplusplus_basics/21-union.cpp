@@ -24,8 +24,10 @@ int main()
 {
     Ogrenci o;
     strcpy(o.ad,"Ferdi");
+    cout<<o.ad<<endl;
     o.araSinavNot = 123.0;
     cout<<showpoint<<o.araSinavNot<<endl;
+    cout<<o.ad<<endl;
     return 0;
 }
 
