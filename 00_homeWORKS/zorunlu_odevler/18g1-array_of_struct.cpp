@@ -148,4 +148,49 @@ Yazıcı 1 sayfa yazma süresi:  2
 56sn - Yazıcı belgeyi yazdı.	files/odev1.cpp (6)
 Tüm Belgeler Yazdırıldı...
 ------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------
+ÖRNEK EKRAN ÇIKTISI 3 (YUKARIDAKİ ÖRNEK DOSYA İÇİN) (belgenin sayfa sayısı fikir vermesi açısından eklendi)
+KAPSİTE = 3
+------------------------------------------------------------------------------------------------
+PC nin belge yazma sıklığı:  3
+Yazıcı 1 sayfa yazma süresi:  2
+0sn - PC kuyruğa yazdı - 	files/odev_son.docx (4)
+0sn - Yazıcı kuyruktan okudu - 	files/odev_son.docx (4)
+3sn - PC kuyruğa yazdı - 	files/odev1.docx (2)
+6sn - PC kuyruğa yazdı - 	files/rapor.docx (5)
+8sn - Yazıcı belgeyi yazdı. 	files/odev_son.docx (4)
+8sn - Yazıcı kuyruktan okudu - 	files/odev1.docx (2)
+9sn - PC kuyruğa yazdı - 	files/son_rapor.docx (4)
+12sn - PC kuyruğa yazdı - 	files/belge.docx (1)
+12sn - Yazıcı belgeyi yazdı. 	files/odev1.docx (2)
+12sn - Yazıcı kuyruktan okudu - 	files/rapor.docx (5)
+15sn - PC kuyruğa yazdı - 	files/gecmis.docx (2)
+18sn - PC kuyruğa yazamadı.
+21sn - PC kuyruğa yazamadı.
+22sn - Yazıcı belgeyi yazdı. 	files/rapor.docx (5)
+22sn - Yazıcı kuyruktan okudu - 	files/son_rapor.docx (4)
+24sn - PC kuyruğa yazdı - 	files/cizelge.pdf (1)
+27sn - PC kuyruğa yazamadı.
+30sn - PC kuyruğa yazamadı.
+30sn - Yazıcı belgeyi yazdı. 	files/son_rapor.docx (4)
+30sn - Yazıcı kuyruktan okudu - 	files/belge.docx (1)
+32sn - Yazıcı belgeyi yazdı. 	files/belge.docx (1)
+32sn - Yazıcı kuyruktan okudu - 	files/gecmis.docx (2)
+33sn - PC kuyruğa yazdı - 	files/haftalık-program.pdf (1)
+36sn - PC kuyruğa yazdı - 	files/sınav-listesi.pdf (2)
+36sn - Yazıcı belgeyi yazdı. 	files/gecmis.docx (2)
+36sn - Yazıcı kuyruktan okudu - 	files/cizelge.pdf (1)
+38sn - Yazıcı belgeyi yazdı. 	files/cizelge.pdf (1)
+38sn - Yazıcı kuyruktan okudu - 	files/haftalık-program.pdf (1)
+39sn - PC kuyruğa yazdı - 	files/odev1.cpp (6)
+40sn - Yazıcı belgeyi yazdı. 	files/haftalık-program.pdf (1)
+40sn - Yazıcı kuyruktan okudu - 	files/sınav-listesi.pdf (2)
+44sn - Yazıcı belgeyi yazdı. 	files/sınav-listesi.pdf (2)
+44sn - Yazıcı kuyruktan okudu - 	files/odev1.cpp (6)
+56sn - Yazıcı belgeyi yazdı.	files/odev1.cpp (6)
+Tüm Belgeler Yazdırıldı...
+------------------------------------------
 */
