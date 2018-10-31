@@ -52,6 +52,7 @@ KULLANICIDAN ALINACAK DEĞERLER
 2. Yazıcının bir sayfayı yazma hızı nedir? (cn): ?
 ------------------------------------------------------------------------------------------------
 ÖRNEK EKRAN ÇIKTISI (YUKARIDAKİ ÖRNEK DOSYA İÇİN)
+KAPASİTE = 5
 ------------------------------------------------------------------------------------------------
 PC nin belge yazma sıklığı:  2
 Yazıcı 1 sayfa yazma süresi:  1
@@ -91,6 +92,7 @@ Tüm Belgeler Yazdırıldı...
 
 ------------------------------------------------------------------------------------------------
 ÖRNEK EKRAN ÇIKTISI 2 (YUKARIDAKİ ÖRNEK DOSYA İÇİN) (belgenin sayfa sayısı fikir vermesi açısından eklendi)
+KAPASİTE = 5
 ------------------------------------------------------------------------------------------------
 PC nin belge yazma sıklığı:  1
 Yazıcı 1 sayfa yazma süresi:  2
