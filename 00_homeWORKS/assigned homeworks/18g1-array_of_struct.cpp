@@ -195,4 +195,49 @@ Yazıcı 1 sayfa yazma süresi:  2
 56sn - Yazıcı belgeyi yazdı.	files/odev1.cpp (6)
 Tüm Belgeler Yazdırıldı...
 ------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------
+ÖRNEK EKRAN ÇIKTISI 3 (YUKARIDAKİ ÖRNEK DOSYA İÇİN) (belgenin sayfa sayısı fikir vermesi açısından eklendi)
+KAPSİTE = 7
+------------------------------------------------------------------------------------------------
+PC nin belge yazma sıklığı:  1
+Yazıcı 1 sayfa yazma süresi:  2
+0sn - PC belgeyi kuyruğa yazdı - 	files/odev_son.docx (4 sayfa)
+0sn - Yazıcı belgeyi kuyruktan okudu - 	files/odev_son.docx (4)
+1sn - PC belgeyi kuyruğa yazdı - 	files/odev1.docx (2 sayfa)
+2sn - PC belgeyi kuyruğa yazdı - 	files/rapor.docx (5 sayfa)
+3sn - PC belgeyi kuyruğa yazdı - 	files/son_rapor.docx (4 sayfa)
+4sn - PC belgeyi kuyruğa yazdı - 	files/belge.docx (1 sayfa)
+5sn - PC belgeyi kuyruğa yazdı - 	files/gecmis.docx (2 sayfa)
+6sn - PC belgeyi kuyruğa yazdı - 	files/cizelge.pdf (1 sayfa)
+7sn - PC belgeyi kuyruğa yazdı - 	files/haftalık-program.pdf (1 sayfa)
+8sn - HATA!!! - PC belgeyi kuyruğa yazamadı. (KUYRUK DOLU)
+8sn - Yazıcı belgeyi yazma işini bitirdi. 	files/odev_son.docx (4 sayfa)
+8sn - Yazıcı belgeyi kuyruktan okudu - 	files/odev1.docx (2)
+9sn - PC belgeyi kuyruğa yazdı - 	files/sınav-listesi.pdf (2 sayfa)
+10sn - HATA!!! - PC belgeyi kuyruğa yazamadı. (KUYRUK DOLU)
+11sn - HATA!!! - PC belgeyi kuyruğa yazamadı. (KUYRUK DOLU)
+12sn - HATA!!! - PC belgeyi kuyruğa yazamadı. (KUYRUK DOLU)
+12sn - Yazıcı belgeyi yazma işini bitirdi. 	files/odev1.docx (2 sayfa)
+12sn - Yazıcı belgeyi kuyruktan okudu - 	files/rapor.docx (5)
+13sn - PC belgeyi kuyruğa yazdı - 	files/odev1.cpp (6 sayfa)
+22sn - Yazıcı belgeyi yazma işini bitirdi. 	files/rapor.docx (5 sayfa)
+22sn - Yazıcı belgeyi kuyruktan okudu - 	files/son_rapor.docx (4)
+30sn - Yazıcı belgeyi yazma işini bitirdi. 	files/son_rapor.docx (4 sayfa)
+30sn - Yazıcı belgeyi kuyruktan okudu - 	files/belge.docx (1)
+32sn - Yazıcı belgeyi yazma işini bitirdi. 	files/belge.docx (1 sayfa)
+32sn - Yazıcı belgeyi kuyruktan okudu - 	files/gecmis.docx (2)
+36sn - Yazıcı belgeyi yazma işini bitirdi. 	files/gecmis.docx (2 sayfa)
+36sn - Yazıcı belgeyi kuyruktan okudu - 	files/cizelge.pdf (1)
+38sn - Yazıcı belgeyi yazma işini bitirdi. 	files/cizelge.pdf (1 sayfa)
+38sn - Yazıcı belgeyi kuyruktan okudu - 	files/haftalık-program.pdf (1)
+40sn - Yazıcı belgeyi yazma işini bitirdi. 	files/haftalık-program.pdf (1 sayfa)
+40sn - Yazıcı belgeyi kuyruktan okudu - 	files/sınav-listesi.pdf (2)
+44sn - Yazıcı belgeyi yazma işini bitirdi. 	files/sınav-listesi.pdf (2 sayfa)
+44sn - Yazıcı belgeyi kuyruktan okudu - 	files/odev1.cpp (6)
+56sn - Yazıcı belgeyi yazma işini bitirdi. 	files/odev1.cpp (6 sayfa)
+Tüm Belgeler Yazdırıldı...
+------------------------------------------
 */
