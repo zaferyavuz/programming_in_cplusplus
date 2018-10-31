@@ -1,5 +1,5 @@
 ## Hızlı Bağlantılar
-* [Zorunlu Ödevler dizini](https://github.com/zaferyavuz/programming_in_cplusplus/tree/master/00_homeWORKS/zorunlu_odevler)
+* [Zorunlu Ödevler dizini](https://github.com/zaferyavuz/programming_in_cplusplus/tree/master/00_homeWORKS/assigned homeworks)
 * İlk Hafta Ders Notları https://bit.ly/2pu3Oge
 * Slayt01 https://bit.ly/2QVIIny
 
