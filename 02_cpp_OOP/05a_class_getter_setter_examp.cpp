@@ -49,6 +49,15 @@ class Ogrenci{
     }
     double OrtalamaHesapla();
     string HarfNotHesapla();
+    void yazdir(){
+      cout<<"AD: " <<ad <<endl;
+      cout<<"SOYAD: " <<soyad<<endl;
+      cout<<"ID: " <<id <<endl;
+      cout<<"ARASINAV NOT: " <<araSinavNot<<endl;
+      cout<<"FINAL NOT: " <<finalNot <<endl;
+      cout<<"ORTALAMA: " <<ortalama<<endl;
+      cout<<"HARFLI NOT: " <<harfNot <<endl;
+            }
   private:
     string ad;
     string soyad;
@@ -66,15 +75,18 @@ double Ogrenci::OrtalamaHesapla() {
   return ortalama;
 }
 string Ogrenci::HarfNotHesapla(){
-  if(!ortalamaHesaplandi) return "E";
-  if(ortalama<40) return "FF";
-  else if(ortalama<45) return "DC";
-  else if(ortalama<55) return "CC";
-  else if(ortalama<65) return "CB";
-  else if(ortalama<75) return "BB";
-  else if(ortalama<85) return "BA";
-  else if(ortalama<=100) return "AA";
-  else return "E";
+  if(!ortalamaHesaplandi){
+    harfNot = "E";
+  } 
+  if(ortalama<40) harfNot="FF";
+  else if(ortalama<45) harfNot="DC";
+  else if(ortalama<55) harfNot="CC";
+  else if(ortalama<65) harfNot="CB";
+  else if(ortalama<75) harfNot="BB";
+  else if(ortalama<85) harfNot="BA";
+  else if(ortalama<=100) harfNot="AA";
+  else harfNot="E";
+  return harfNot;
 }
 int main() {
    Ogrenci o1;
@@ -87,7 +99,8 @@ int main() {
    o1.OrtalamaHesapla();
    o1.HarfNotHesapla();
 
-   cout<<o1.getAd()<<" "<<o1.getSoyad()<<" "<<o1.getOrtalama()<<endl;   
+   //cout<<o1.getAd()<<" "<<o1.getSoyad()<<" "<<o1.getOrtalama()<<endl;   
+   o1.yazdir();
    return 0;
 }
 
