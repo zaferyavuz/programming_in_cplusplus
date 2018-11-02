@@ -57,7 +57,10 @@ class Ogrenci{
       cout<<"FINAL NOT: " <<finalNot <<endl;
       cout<<"ORTALAMA: " <<ortalama<<endl;
       cout<<"HARFLI NOT: " <<harfNot <<endl;
-            }
+    }
+    void yazdir2(){
+      cout<<ad<<" "<<soyad<<" "<<harfNot<<endl;
+    }
   private:
     string ad;
     string soyad;
@@ -100,8 +103,6 @@ int main() {
    o1.HarfNotHesapla();
 
    //cout<<o1.getAd()<<" "<<o1.getSoyad()<<" "<<o1.getOrtalama()<<endl;   
-   o1.yazdir();
+   o1.yazdir2();
    return 0;
 }
-
-// https://codeshare.io/G7XMpY
