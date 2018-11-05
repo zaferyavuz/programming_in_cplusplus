@@ -1,20 +1,22 @@
 #include <iostream>
-#define N 2
+#define N 10
 using namespace std;
 
-class Kuyruk{
+class MyQueue{
   public:
-    Kuyruk(){
-      writePointer = 0;
-      readPointer = 0;
-      elemanSayisi = 0;
-      kapasite = N;
+    MyQueue(){
+      itemCount     = 0;
+      readPointer   = 0;
+      writePointer  = 0;
+      capacity      = N;
     }
     void setReadPointer(int r){
-      readPointer = r;
+      if(itemCount == 0)
+        readPointer = r;
     }
     void setWritePointer(int w){
-      writePointer = w;
+      if(itemCount == 0)
+        writePointer = w;
     }
     int getReadPointer(){
       return readPointer;
@@ -22,44 +24,51 @@ class Kuyruk{
     int getWritePointer(){
       return writePointer;
     }
-    void KuyrugaEkle(int i){
-      if(elemanSayisi==kapasite) return;
-      elemanSayisi++;
-      items[writePointer] = i;
-      writePointer = (writePointer+1) % N;
+    int getCapacity(){
+      return capacity;
     }
-    int KuyruktanCek(){
-        if(elemanSayisi != 0){
-          elemanSayisi--;
-          int item = items[readPointer];
-          readPointer = (readPointer+1) % N;
-          return item;
-        } 
-        else return -10000;
-    } 
-    bool KuyrukBos(){
-      if(elemanSayisi == 0)
-        return true;
+    int getItemCount(){
+      return itemCount;
+    }
+    void append(int a){
+      if(itemCount < capacity){
+        items[writePointer] = a;
+        writePointer = (writePointer + 1) % N;
+        itemCount++;
+      }
+    }
+    int pop(){
+      if(itemCount>0){
+        int i = items[readPointer];
+        readPointer = (readPointer+1) % N;
+        itemCount--;
+        return  i;
+      }
       else
-        return false;
+        return 0;
     }
-    int KuyruktakiElemanSayisi(){
-      return elemanSayisi;
-    }
+// https://codeshare.io/5QrXB7
   private:
     int items[N];
     int readPointer;
     int writePointer;
-    int elemanSayisi;
-    int kapasite;
-}; 
+    int capacity;
+    int itemCount;
+};
+
 
 int main() {
-  Kuyruk k1;
-  k1.KuyrugaEkle(1);
-  k1.KuyrugaEkle(2);
-  cout<<k1.KuyruktanCek();
-    
+  MyQueue q1;
+  q1.append(2);
+  q1.append(5);
+  q1.append(7);
+  cout<<q1.pop()<<endl; // 2
+  q1.append(10);
+  q1.append(50);
+  q1.append(17);
+  cout<<q1.pop()<<endl;  // 5
+  cout<<q1.getItemCount()<<endl;  // 4
 
+ 
   return 0;
 }
