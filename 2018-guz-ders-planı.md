@@ -68,11 +68,13 @@
   
 * Ders 2
   * public, private, protected
-  * constructor, parametreli constructor, destructor, copy constructor
+  * constructor, parametreli constructor, 
 
 ## Hafta 07
 * Ders 1
-  * örnek uygulama
+  * destructor, copy constructor
+  * data abstraction, iplementation hiding
+  * code::blocks ile derleme, debug, 
   
 * Ders 2
 
