@@ -77,17 +77,61 @@
   * code::blocks ile derleme, debug, 
   
 * Ders 2
+  * friend function, inline functions, this pointer
+  * örnek uygulama
 
 ## Hafta 08
 * Ders 1
+  * pointer to classes, static members
   * örnek uygulama
   
 * Ders 2
+  * serbest uygulama
 
 ## Hafta 09
 * ------------------- ARASINAV HAFTASI ---------------------------
 ## Hafta 10
 * Ders 1
+  * composition, inheritance
   * örnek uygulama
   
 * Ders 2
+  * inheritance in advanced,
+  * örnek uygulama
+  
+## Hafta 11
+* Ders 1
+  * ?function overloading
+  
+* Ders 2
+  * ?operator overloading
+
+## Hafta 12
+* Ders 1
+  * ?sanal fonk. ve sınıflar
+  
+* Ders 2
+  * ?örnek uygulama
+  
+## Hafta 13
+* Ders 1
+  * ?polimorfizm
+  
+* Ders 2
+  * ?templates
+  
+## Hafta 14
+* Ders 1
+  * ?örnek uygulama
+  
+* Ders 2
+  * ?stl-1
+
+## Hafta 15 (telafi haftası)
+* Ders 1
+  * ?stl-2
+  
+* Ders 2
+  * ?örnek uygulama
+## Hafta 16-17
+* Final haftası
