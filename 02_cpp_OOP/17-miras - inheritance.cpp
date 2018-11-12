@@ -65,5 +65,99 @@ int main(void) {
 //=================================================================================
 /*
 		Access Control and Inheritance
-		- .......
+		- derived class base class'ın private olmayan tüm üyeşerine erişebilir.
+		- derived class aşağıdaki üyeler hariç tüm methodları miras alır
+			* constructor, destructor, copy constructor
+			* overloaded operators
+			* friend functions
+			
+		Miras Türleri
+		- public:
+			* sıklıkla kullanılır,
+			* üyelere erişim şu şekilde olur
+				- public 	> public
+				- protected > protected
+				- private	> asla erişilemez
+		- protected:
+			* üyelere erişim şu şekilde olur
+				- public	> protected
+				- protected > pretected
+				- private	> asla erişilemez
+		- private:
+			* üyelere erişim şu şekilde olur
+				- public	> private
+				- protected > private
+				- private	> asla erişilemez
+		- protected
+		- private
+*/
+
+//==============================================================
+/*
+// 	MULTIPLE INHERITANCE
+	- bir sınıf birden çok başka sınıftan miras alabilr,
+	- her bir sınıftan miras alma yöntemi farklı olabilir
+	- miras alırken virgül ile ayrım yapılır
+
+*/
+
+/*
+#include <iostream>
+ 
+using namespace std;
+
+// Base class Shape
+class Shape {
+   public:
+      void setWidth(int w) {
+         width = w;
+      }
+      void setHeight(int h) {
+         height = h;
+      }
+      
+   protected:
+      int width;
+      int height;
+};
+
+// Base class PaintCost
+class PaintCost {
+   public:
+      int getCost(int area) {
+         return area * 70;
+      }
+};
+
+// Derived class
+class Rectangle: public Shape, public PaintCost {
+   public:
+      int getArea() {
+         return (width * height); 
+      }
+};
+
+int main(void) {
+   Rectangle Rect;
+   int area;
+ 
+   Rect.setWidth(5);
+   Rect.setHeight(7);
+
+   area = Rect.getArea();
+   
+   // Print the area of the object.
+   cout << "Total area: " << Rect.getArea() << endl;
+
+   // Print the total cost of painting
+   cout << "Total paint cost: $" << Rect.getCost(area) << endl;
+
+   return 0;
+}
+*/
+
+/*
+Çıktı:
+Total area: 35
+Total paint cost: $2450
 */
