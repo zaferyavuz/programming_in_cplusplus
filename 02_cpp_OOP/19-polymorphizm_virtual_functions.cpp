@@ -152,7 +152,7 @@ return 0;
 
 		   // Other members ...
 
-	abstract (soyut) class özellikleri
+	abstract (soyut) class özellikleri - Interfaces
 		1. En az bir saf sanal fonk. varsa, bu sınıf soyutdur.
 		2. soyut sınıf tipinde pointer ve referanslar tanımlanabilir.
 		3. türeyen sınıfta temel sınıftaki fonk.nu aşırı yüklemezsek o halde türetilen sınıf da soyut olur
