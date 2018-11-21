@@ -115,5 +115,71 @@ DAHA ÖNCE TANIMLANAN BOX SINIFI İÇİN
 
 */
 //**********************************************************************
+/*
+// THE ADDRESS OF OPERATOR AND CLASSES
+// bellek değişimlerini şematik olarak çizelim
+//----------------------------------------------
+//header file testadd.h
+#ifndef H_testAdd
+#define H_testAdd
 
+class testAddress
+{
+public:
+    void setX(int);
+    void printX() const;
+    int& addressOfX();   //this function returns the 
+                    //address of the private data member
+
+private:
+    int x;
+};
+
+#endif
+//-----------------------------------------------------------------------
+//Implementation file testAdd.cpp
+#include <iostream>
+#include "testAdd.h"
+using namespace std;
+
+void testAddress::setX(int inX)
+{
+	x = inX;
+}
+
+void testAddress::printX() const
+{
+	cout<<x;
+}
+
+int& testAddress::addressOfX()
+{ 
+   return x;
+} 
+//----------------------------------------------------------------
+//Test program
+#include <iostream>
+#include "testAdd.h"
+using namespace std;
+
+int main()
+{
+	testAddress a;
+	int &y = a.addressOfX();
+
+	a.setX(50);
+	cout<<"x in class testAddress = ";
+	a.printX();
+	cout<<endl;
+
+	y = 25;
+	cout<<"After y = 25, x in class testAddress = ";
+	a.printX();
+	cout<<endl;
+
+	return 0;
+}
+
+
+*/
 
