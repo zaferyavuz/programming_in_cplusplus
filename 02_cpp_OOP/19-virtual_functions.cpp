@@ -59,3 +59,8 @@ return 0;
 }
 */
 //-------------------------------------------------------------------------
+/*
+	virtual class,
+	virtual destractor
+	pure virtual function
+*/
