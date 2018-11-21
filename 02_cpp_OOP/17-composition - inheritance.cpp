@@ -146,7 +146,7 @@ Date::Date(int m, int d, int y)
             day = d;
       else
             day = 1;
-      if(y >= 1900 && y <= 2010)//makes sure year is valid
+      if(y >= 1900 && y <= 2030)//makes sure year is valid
             year = y;
       else
             year = 1900;
@@ -161,7 +161,7 @@ void Date::setDate(int m, int d, int y)
             day = d;
       else
             day = 1;
-      if(y >= 1900 && y <= 2010)
+      if(y >= 1900 && y <= 2030)
             year = y;
       else
             year = 1900;
