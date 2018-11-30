@@ -92,12 +92,14 @@
 * ------------------- ARASINAV HAFTASI ---------------------------
 ## Hafta 10
 * Ders 1
-  * composition, inheritance
+  * composition, multi-level comğposition (oluşum, çok seviyeli (iç içe) oluşumlar)
+  * inheritance (1-level, public, protected, private inheritance)
   * örnek uygulama
   
 * Ders 2
-  * inheritance in advanced,
+  * inheritance in advanced (multi-level, multiple (ambiguity=belirsizlik durumu), hierarchic),
   * örnek uygulama
+  * basit pointer, class pointer, new, delete
   
 ## Hafta 11
 * Ders 1
