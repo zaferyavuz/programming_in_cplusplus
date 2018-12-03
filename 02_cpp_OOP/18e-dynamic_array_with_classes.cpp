@@ -174,6 +174,7 @@ int main() {
   nyp.ogrOrtalamaBul();
   nyp.odevOrtalamaBul();
 */
+/*
   Ders nyp;
   ifstream oku;
   oku.open("a.txt");
@@ -185,7 +186,14 @@ int main() {
   double *ogrNot;
   ogrNot = nyp.ogrenciNotlarPtr(2);
   cout<<ogrNot[1]<<endl;
-
+*/
 //---------------------------------------
+/*
+  Ders *dersler = new Ders[52];
+  dersler[0].notlarOku();
+*/
+//-----------------------------------------
+  Ders dersler[52] = {Ders(2,1),Ders(3,4)};
+
   return 0;
 }
