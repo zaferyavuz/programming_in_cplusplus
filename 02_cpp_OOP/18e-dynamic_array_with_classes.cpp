@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 class Ders{
@@ -30,6 +31,13 @@ class Ders{
         }
       }  
     }
+    void dosyadanNotlarOku(ifstream &oku){
+      for(int i=0;i<ogrSayi;i++){
+        for(int j=0;j<odevSayi;j++){
+          oku>>notlar[i][j];
+        }
+      }  
+    }
     void ogrOrtalamaBul(){
       double toplam=0;
       for(int i=0;i<ogrSayi;i++){
@@ -53,7 +61,11 @@ class Ders{
         cout<< j+1 << ". ödev ort="
             << odevOrtalama[j]<<endl;
       }
-  }
+    }
+    // geri dönüş değeri pointer olan fonk.
+    double* ogrenciNotlarPtr(int i){
+      return notlar[i];
+    } 
   private:
     int ogrSayi;
     int odevSayi;
@@ -156,10 +168,23 @@ int main() {
 //---------------------------------------
 
 // Yukarıdaki class yapısı kullanarak
+/*
   Ders nyp;
   nyp.notlarOku();
   nyp.ogrOrtalamaBul();
   nyp.odevOrtalamaBul();
+*/
+  Ders nyp;
+  ifstream oku;
+  oku.open("a.txt");
+  nyp.dosyadanNotlarOku(oku);
+  nyp.ogrOrtalamaBul();
+  nyp.odevOrtalamaBul();
+
+// geri dönüş değeri pointer olan fonk.
+  double *ogrNot;
+  ogrNot = nyp.ogrenciNotlarPtr(2);
+  cout<<ogrNot[1]<<endl;
 
 //---------------------------------------
   return 0;
