@@ -13,6 +13,14 @@ class Ders{
         notlar[i] = new double[odevSayi];
       }
     }
+    ~Ders(){
+      delete ogrOrtalama;
+      delete odevOrtalama;
+      for(int i=0;i<ogrSayi;i++){
+        delete notlar[i];
+      }
+      delete notlar;
+    }
     void notlarOku(){
       for(int i=0;i<ogrSayi;i++){
         cout<<i+1<<". ogrencinin"<<endl;
