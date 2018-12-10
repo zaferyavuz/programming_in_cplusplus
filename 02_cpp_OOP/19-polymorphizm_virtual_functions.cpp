@@ -70,6 +70,18 @@ int main() {
    return 0;
 }
 */
+
+/*
+Çıktı:
+Parent class area :
+Parent class area :
+
+- bırada static binding yapıldığı için beklenen şekilde çalışmadı, 
+- dynamic binding için sanal fonksiyon şeklinde tanımlanması gerekir
+- şekil olarak anlatalım...
+*/
+
+
 //************************************************************************************************
 /*
 	Virtual Functions (Sanal Fonksiyonlar)
