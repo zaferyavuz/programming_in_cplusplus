@@ -29,3 +29,19 @@ int main() {
   RandevuSistemi rs;
   rs.menu();
 }
+//-----------------------------------------------------------------------------------------------------
+/*
+3. ödevde tarih string yapısını bölme amaçlı kullanmak için yardımcı kod parcası
+*/
+/*
+#include <iostream>
+#include <stdlib.h> // atoi için
+using namespace std;
+int main() {
+  string t="12.12.2018";
+  int gun = atoi(t.substr(0,2).c_str());
+  int ay = atoi(t.substr(3,2).c_str());
+  int yil = atoi(t.substr(6,4).c_str());
+  cout <<gun<<"/"<<ay<<"/"<<yil<<endl;
+}
+*/
