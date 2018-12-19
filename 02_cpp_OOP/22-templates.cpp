@@ -1,5 +1,52 @@
+#include <iostream>
+using namespace std;
 /*
-Function Template
+  - jenerik (yani türden bağımsız) programlama yapmak için kullanılır.
+  - template kullanılmasa idi o halde her tür için fonk. ya da sınıfı aşırı yükleyecktik.
+  - template anahtar kelimesi kullanılır
+  template <typename|class "tür_belirteci",....>
+  ....
+  - "tür belirtici" kelimesini bundan böyle tip yerine kullanabiliriz.
+  - derleyici koşma ya da derleme zamanında ilgili türü yerine koyarak çalıştırılabilir kod üretir.
+  - yukarıdaki tür belirteci artık tip ya da sınıf türü olabilir. 
+*/
+
+
+template <typename T, typename T1> T isEqual(T a,T1 b){
+  if(a==b) return true;
+  return false;
+}
+
+template <class T> class Complex {
+  public:
+    Complex(T x=0,T y=0){
+      this->x = x;
+      this->y = y;
+    }
+    string toString(){
+      string s1,s2;
+      s1 = " + ";
+      s2 = "i";
+      return to_string(x) + s1 + to_string(y) + s2;
+    }
+
+  private:
+    T x;
+    T y;
+};
+int main() {
+  Complex<float> a(10.0,5);
+  Complex<int> a1(10,5);
+  cout<<a.toString()<<endl;
+  cout<<a1.toString()<<endl;
+  cout << "Hello World!\n"<<isEqual(5.0, 5);
+  return 0;
+}
+
+//---------------------------------------------------------------------------------------
+
+/*
+	Function Template: Finding max element
 */
 /*
 #include <iostream>
